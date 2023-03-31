@@ -1,0 +1,75 @@
+.container {
+   
+    display: grid ;
+    grid-gap: 10px;
+        grid-template-columns: [col] 11% [col]  67%[col]  10% [col]  11% ;
+        grid-template-rows: [row] 10% [row] 10% [row] ;
+        background-color: #fff;
+        color: #444;
+      
+    } 
+    
+    .box {
+    background-color: #444;
+        color: #fff;
+        border-radius: 5px;
+        padding: 20px;
+        font-size: 150%;
+    
+      }
+    .header {
+        grid-column: col / span 4;
+        text-align: start;
+        flex-wrap: wrap;
+        background-color: rgb(255, 244, 34);
+         color:#fff;
+        grid-row: row ;
+      }
+     p {
+    text-align: center;
+    color: #fff;
+    font-size: 10px;
+    display: inline;
+      }
+      .nav {
+        font-size: 20px;
+        text-align: center;
+        flex-wrap: wrap;
+
+        color: #fff;
+        background-color: rgb(52, 223, 249);
+        grid-column: col 2 /span 4;
+        grid-row: row 2 ;
+        height: 50%;
+       
+      }
+      .saidbar {
+        text-align:start;
+        flex-wrap: wrap;
+        background-color: orange;
+        color: #fff;
+        font-size: 10px;
+       
+        grid-column: col 1 / span    ;
+        grid-row: row 2 /4;
+      }.artical {
+        font-size: 7px;
+        flex-wrap: wrap;
+        font-family: 'Times New Roman', Times, serif;
+        text-align: justify;
+
+        height: 500px;
+        background-color: rgb(135, 160, 170);
+    color: rgb(255, 255, 255);
+        grid-column: col 2 /span 4 ;
+        grid-row: row 3 ;
+      }
+     
+    
+      .Footer {
+        text-align: center;
+        background-color: #110e47;
+        color: #fff;
+        grid-column: col / span 4;
+        grid-row: row 4;
+      }
